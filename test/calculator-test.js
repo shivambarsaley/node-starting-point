@@ -26,7 +26,7 @@ describe('Calculator', function() {
 
     it('should return Error when dividing by zero', function() {
 
-      assert.throws(() => {Calculator.divide(4, 0)}, Error, 'Cannot Divide By 0')
+      assert.throws(function () {Calculator.divide(4, 0)}, Error, 'Cannot Divide By 0')
     })
   });
 });
